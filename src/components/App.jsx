@@ -22,8 +22,9 @@ class App extends Component {
   };
 
   countTotalFeedback() {
+    const { good, bad, neutral } = this.state;
     // Підрахунок загальної кількість відгуків
-    const total = this.state.good + this.state.bad + this.state.neutral;
+    const total = good + bad + neutral;
     return total;
   }
 
